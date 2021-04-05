@@ -20,7 +20,8 @@ export default class SeachPanel extends Component {
 			<input
 				className="form-control search-input"
 				type="text"
-				placeholder="Поиск по записям"
+				value={this.state.term}
+				placeholder="Поиск"
 				onChange={this.onUpdateSearch}
 			></input>
 		);
